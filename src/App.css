@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+:root {
+  --bold-font: "Poppins", serif;
+  --slim-font: "Lato", serif;
+  --main-color:#ffdda3;
+  --primary-color:#121212;
+  --secondary-color:#8B322C;
+}
+
+.container {
+  width: 95%;
+  margin: auto;
+}
+
+section {
+  height: 100vh;
+}
+
+body {
+  background-color: var(--main-color);
+  font-family: var(--bold-font);
+}
+
+.non-container {
+  width: 95%;
+  margin: auto;
+}
+
+#banner {
+  margin: 0 10px;
+}
+
+nav {
+  border-bottom: 1px solid black;
+  margin: 0 10px;
+}
+nav .nav-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .nav-main .logo {
+  width: 100px;
+  margin-bottom: 5px;
+}
+nav .nav-main .logo img {
+  width: 100%;
+  cursor: pointer;
+}
+nav .nav-main .nav-item {
+  margin-left: 70px;
+}
+nav .nav-main .nav-item a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+nav .nav-main .nav-item a li {
+  font-weight: 500;
+  display: inline;
+  margin-right: 20px;
+}
+nav .nav-main .nav-item a li:hover {
+  transform: scale(1.1);
+}
+nav .nav-main .search-area form {
+  border: 1px solid var(--primary-color);
+  width: 85%;
+  border-radius: 20px;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .nav-main .search-area form input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  padding: 7px;
+  width: 80%;
+}
+nav .nav-main .search-area form button {
+  border: none;
+  background-color: transparent;
+}
+nav .nav-main .search-area form button p {
+  font-size: 25px;
+  margin: 0;
+  padding-top: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+nav .nav-main .hamburger-bar {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    margin: 0;
+  }
+  nav .nav-main {
+    position: relative;
+  }
+  nav .nav-main .nav-item {
+    display: none;
+  }
+  nav .nav-main .navs-main {
+    height: 80vh;
+    background-color: var(--main-color);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    right: 0;
+  }
+  nav .nav-main .navs-main .nav-items {
+    position: absolute;
+    top: 15%;
+    left: 0%;
+  }
+  nav .nav-main .navs-main .nav-items ul a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  nav .nav-main .navs-main .nav-items ul a li {
+    font-size: 40px;
+    font-weight: 550;
+    display: block;
+    margin-bottom: 25px;
+  }
+  nav .nav-main .navs-main .nav-items ul a li:hover {
+    transform: scale(1.1);
+  }
+  nav .nav-main .navs-main .closebtn {
+    position: absolute;
+    right: 2%;
+    top: 2%;
+  }
+  nav .nav-main .navs-main .closebtn button {
+    margin-right: 10px;
+    border: none;
+    background-color: transparent;
+    font-size: 35px;
+  }
+  nav .nav-main .search form {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0px;
+    margin-top: 5px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    border: 1px solid var(--primary-color);
+  }
+  nav .nav-main .search form input {
+    width: 70%;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    font-size: 20px;
+  }
+  nav .nav-main .search form div {
+    margin-right: 20px;
+  }
+  nav .nav-main .search form div button {
+    margin-right: 5px;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+  }
+  nav .nav-main .search-area {
+    display: none;
+  }
+  nav .nav-main .hamburger-bar {
+    display: block;
+    margin-right: 5px;
+  }
+  nav .nav-main .hamburger-bar button {
+    margin-right: 10px;
+    border: none;
+    background-color: transparent;
+    font-size: 25px;
+  }
+}
+
+/*# sourceMappingURL=App.css.map */

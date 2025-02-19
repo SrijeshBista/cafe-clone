@@ -1,0 +1,176 @@
+nav{
+    border-bottom: 1px solid black;
+    margin: 0 10px;
+    .nav-main{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;  
+        .logo{
+            width: 100px;
+            // margin: 0 20px;
+    
+            img{
+                width: 100%;
+                cursor: pointer;
+            }
+            margin-bottom: 5px;
+        }
+        .nav-item{
+            margin-left: 70px;
+            
+            a{
+                color: var(--primary-color);
+                text-decoration: none;   
+                li{
+                    font-weight: 500;
+                    display: inline;
+                    margin-right: 20px;
+                    &:hover{
+                        transform: scale(1.1);
+                       
+                    }
+                }
+            } 
+            
+        }
+        .search-area{
+          
+            form{
+                border: 1px solid var(--primary-color);
+                width: 85%;
+                border-radius: 20px;
+                background-color: #FFFFFF;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                input{
+                    background-color: transparent;
+                    border: none;
+                    outline: none;
+                    font-size: 20px;
+                    padding:  7px;
+                   width: 80%;
+                }
+                button{
+                    border: none;     
+                    background-color: transparent;
+                    p{
+                        font-size: 25px;
+                        margin: 0;
+                        padding-top: 5px;
+                        cursor: pointer;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+        .hamburger-bar{
+            display: none;
+        }
+    }
+}
+
+
+// responsive for mobile 
+@media screen and (max-width:768px) {
+    nav{
+        margin: 0;
+        .nav-main{
+        position: relative; 
+        .nav-item{
+            display: none;
+        }
+        .navs-main{
+         height: 80vh;
+         background-color: var(--main-color);
+        //  border: 1px var(--primary-color);
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            position: absolute;
+            top:0%;
+            right: 0;
+            .nav-items{
+                position: absolute;
+                top: 15%;
+                left: 0%;
+                ul{
+
+                    a{
+                        color: var(--primary-color);
+                        text-decoration: none; 
+                        li{
+                           font-size: 40px;
+                           font-weight: 550;
+                            display: block;
+                            margin-bottom: 25px;
+                            &:hover{
+                                transform: scale(1.1);   
+                            }
+                        }
+                    }
+                }
+            }
+            .closebtn{
+                position: absolute;
+                right: 2%;
+                top: 2%;
+                button{
+                    margin-right: 10px;
+                    border: none;
+                    background-color: transparent;
+                    font-size: 35px;
+                    }
+        }
+        }
+        .search{
+         
+            form{
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 0px;
+                margin-top: 5px;
+                background-color: #FFFFFF;
+                border-radius: 20px;
+                border: 1px solid var(--primary-color);
+                input{
+                    width: 70%;
+                    border-radius: 20px;
+                    border: none;
+                    outline: none;
+                    padding: 10px 20px;
+                    font-size: 20px;
+                }
+                div{
+                    margin-right: 20px;
+                    button{
+                        margin-right: 5px;
+                        font-size: 20px;
+                        border: none;
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+        .search-area{
+            display: none;
+        }
+     
+        .hamburger-bar{
+            display: block;
+            margin-right: 5px;
+            button{
+                margin-right: 10px;
+                border: none;
+                background-color: transparent;
+                font-size: 25px;
+            }
+        }
+    }
+}
+}
