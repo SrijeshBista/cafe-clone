@@ -1,7 +1,14 @@
 nav{
-    border-bottom: 1px solid black;
-    margin: 0 10px;
+    margin-top: 10px;
+    position: fixed;
+    padding-top: 20px;
+    top: -10px;
+    right: 0;
+    width: 100%;
+    background-color: var(--main-color);
+    z-index: 2;
     .nav-main{
+        border-bottom: 1px solid black;
         display: flex;
         justify-content: space-between;
         align-items: center;  
@@ -17,20 +24,18 @@ nav{
         }
         .nav-item{
             margin-left: 70px;
-            
-            a{
-                color: var(--primary-color);
-                text-decoration: none;   
                 li{
-                    font-weight: 500;
+                    font-weight: 600;
                     display: inline;
                     margin-right: 20px;
-                    &:hover{
-                        transform: scale(1.1);
-                       
-                    }
+                    cursor: pointer;
+                   
                 }
-            } 
+                li:hover{
+                    font-size: 20px;
+                    transition: 200ms ease-in-out;
+                    border-bottom: 1.5px solid var(--primary-color);
+                }
             
         }
         .search-area{
@@ -74,14 +79,16 @@ nav{
 // responsive for mobile 
 @media screen and (max-width:768px) {
     nav{
-        margin: 0;
+        margin-top: 10px;
+        padding-top:9px ;
         .nav-main{
-        position: relative; 
+            
         .nav-item{
             display: none;
         }
         .navs-main{
-         height: 80vh;
+         height: 100vh;
+         z-index: 5;
          background-color: var(--main-color);
         //  border: 1px var(--primary-color);
             margin: 0;

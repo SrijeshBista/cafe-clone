@@ -26,18 +26,18 @@ const Header =() =>{
     return(
         <>
         <nav>
-            <div className="">
+            <div className=" container">
                 <div className="nav-main   ">
                     <div className="logo ">
                         <img src={logo} alt="Logo" />
                     </div>
                     <div className="nav-item">
                         <ul>
-                           <a href="/"><li>Home</li></a> 
-                           <a href="/"><li>About Us</li></a> 
-                           <a href="/"><li>Contact</li></a> 
-                           <a href="/"><li>Blog</li></a> 
-                           <a href="/"><li>Shop</li></a> 
+                          <li>Home</li>
+                          <li>About US</li>
+                          <li>Blog</li>
+                          <li>Shop</li>
+                          <li>Contact</li>
                            
                         </ul>
                     </div>

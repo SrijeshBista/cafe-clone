@@ -1,3 +1,221 @@
 #banner{
+    padding-top: 5%;
     margin: 0 10px;
+    .banner-title{
+        h1{
+            font-size: 3rem;
+            margin: 0px;
+            padding: 20px;
+            font-family: var(--bold-font);
+            padding-bottom:0 ;
+        }
+    }
+    .banner-main{
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        margin-top: 10px;
+        .banner-left{
+            width:50% ;
+            border-radius: 30px;
+            display: flex;
+            flex-direction: column;
+            // height:600px;
+            padding: 30px 10px 50px 10px;
+            .title{
+                h1{
+                    margin: 0;
+                    padding: 20px;
+                    font-size: 2.2rem;
+                    font-family: var(--bold-font);
+                    font-weight: 600;
+                    padding-top: 0;
+                }
+            }
+            .des{
+                p{
+                    margin: 0;
+                    padding: 20px;
+                    padding-top: 0;
+                    font-size: 17px;
+                    font-family: var(--slim-font);
+                    font-weight: 500;
+                    color: rgb(109, 108, 108);
+                }
+                .insidebtn{
+                    padding: 10px;
+                    button{
+                        font-size: 20px;
+                        padding: 10px 20px;
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                        cursor: pointer;
+                        background-color: var(--secondary-color);
+                        color: #FFFF;
+                        border: none;
+                        border-radius: 20px;
+                        &:hover{
+                            transform: scale(1.1);
+                            background-color: var(--primary-color);
+                            transition: 350ms ease-in-out;
+                        }
+                    }
+                }
+            }
+        }        
+        .banner-right{
+            width: 45%;
+            // border: 2px solid wheat;
+            .img{   
+                text-align: center;
+                margin: 10px ;
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                img{
+                    border-radius: 20px;
+                    width: 100%;
+                    height: 500px;
+                    object-fit: cover;
+                }
+                
+                .slides-btn{
+                    button{
+                        display: none;
+                    }
+                }
+            }
+
+            .dots-container {
+                text-align: center;
+                margin-top: 10px;
+                .dot {
+                  width: 12px;
+                  height: 12px;
+                  margin: 5px;
+                  background: #bbb;
+                  display: inline-block;
+                  border-radius: 50%;
+                  cursor: pointer;
+                  transition: background 0.3s ease-in-out;
+                }
+                .dot.active {
+                  background: #222;
+                //   transform: scale(1.2);
+                }
+            }
+            
+        }
+        .right-side{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+            gap: 25px;
+            text-align: start;
+            
+            .detail{
+                cursor: pointer;
+                background-color: #FFFF;
+                box-shadow: 3px 3px 3px 3px var(--primary-color);
+                border: 1px solid var(--primary-color);
+                padding: 0px 10px;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                width: 250px;
+                z-index: 1;
+                &:hover{
+                    transform: scale(1.1);
+                    rotate: -5deg;
+                    transition: 300ms ease-in-out;
+                }
+                icon{
+                    // border: 2px solid black;
+                    font-size: 2.2rem;
+                    margin-left: 50px;
+                    margin: 5px;
+    
+                }
+                h1{
+                    margin: 0;
+                }
+                p{
+                    width: 90%;
+                    margin: 0;
+                }
+            }
+            .details{
+                &:hover{
+                    rotate: 5deg;
+                }
+            }
+        }
+    }
+}
+
+
+// responsive  for mobile 
+@media screen and (max-width:768px) {
+    #banner{
+        padding-top: 20%;
+        height: fit-content;
+        z-index: 1;
+        .banner-title{
+            h1{
+                font-size: 2.5rem;
+                padding-left: 0;
+            }
+        }
+        .banner-main{
+            flex-direction: column;
+            .banner-left{
+                padding-bottom: 20px;
+                width: 92%;
+                .title{
+                    h1{
+                        font-size: 1.7rem;
+                    }
+                }
+                .des{
+                    p{
+                        font-size: 1rem;
+                    }
+                }
+            }
+            .banner-right{
+                width: 100%;
+                
+                .img{
+                    width: 100%;
+                    flex-direction: column-reverse;
+                    margin: 0;
+                    img{
+                        width: 100%;
+                        height: 400px;
+                       
+                    }
+                }
+            }
+            .right-side{
+                width: 100%;
+                flex-direction: row;
+                flex-wrap: wrap;
+                .detail{
+                    width: 120px;
+                    icon{
+                        font-size: 1.5rem;
+                    }
+                    h1{
+                        font-size: 16px;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
 }

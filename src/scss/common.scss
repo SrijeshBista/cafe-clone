@@ -14,3 +14,32 @@ body{
     width: 95%;
     margin: auto;
 }
+.insidebtn{
+    padding: 10px;
+    button{
+        font-size: 20px;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        cursor: pointer;
+        background-color: var(--secondary-color);
+        color: #FFFF;
+        border: none;
+        border-radius: 20px;
+        &:hover{
+            transform: scale(1.1);
+            background-color: var(--primary-color);
+            transition: 350ms ease-in-out;
+        }
+    }
+}
+.banner-title{
+    h1{
+        font-size: 3rem;
+        margin: 0px;
+        padding: 20px;
+        font-family: var(--bold-font);
+        padding-bottom:0 ;
+    }
+}
