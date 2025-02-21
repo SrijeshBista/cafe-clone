@@ -37,7 +37,7 @@ const Header =() =>{
                           <li>About US</li>
                           <li>Blog</li>
                           <li>Shop</li>
-                          <li>Contact</li>
+                          <li>Contact Us</li>
                            
                         </ul>
                     </div>
@@ -76,7 +76,7 @@ const Header =() =>{
                                 <a href="/"><li>About Us</li></a> 
                                 <a href="/"><li>Blog</li></a> 
                                 <a href="/"><li>Shop</li></a> 
-                                <a href="/"><li>Contact</li></a> 
+                                <a href="/"><li>Contact Us</li></a> 
                             </ul>
                         </div>
                     

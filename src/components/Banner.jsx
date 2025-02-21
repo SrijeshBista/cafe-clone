@@ -53,7 +53,7 @@ const prevslide =() =>{
                     <div className="des">
                         <p>Welcome to Coffee Cup Café, where every sip is crafted with passion and warmth. Nestled in the heart of town, our café is more than just a place to grab a cup of coffee—it’s a cozy retreat for those who appreciate quality, comfort, and connection. </p>
                         <div className="insidebtn">
-                            <button>Order Now <CiCoffeeCup/></button>
+                            <button>More...</button>
                         </div>
                     </div>
                     <div className="right-side">
