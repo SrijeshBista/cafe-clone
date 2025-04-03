@@ -3,13 +3,22 @@
     height: fit-content;
    
         color: #FFFFFF;
-        .menu{
-            .menu-item{
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-             
-            }
+        .order-main{
+          .order-top{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+          .order-middle{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+          .order-bottom{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
         }
 
     

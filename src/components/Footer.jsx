@@ -1,6 +1,8 @@
 import { useEffect,useState } from "react";
 import logos from "../assets/cafe.png"
 import { FaFacebook , FaInstagram } from "react-icons/fa";
+import { BrowserRouter } from "react-router-dom";
+import { Link } from "react-router-dom";
 const Footer =()=> {
     return(
         <>
@@ -9,7 +11,7 @@ const Footer =()=> {
                 <div className="footer-main">
                     <div className="footer-left">
                         <div className="footer-logo">
-                            <img src={logos} alt="logo" />
+                          <Link to="/"><img src={logos} alt="logo" /></Link>
                         </div>
                         <div className="footer-des">
                             <p>At Coffee Cup Café, we believe in the magic of a perfectly brewed cup.</p>
@@ -23,11 +25,12 @@ const Footer =()=> {
                             <div className="footer-nav nav-item">
                                 <ul> 
                                     <h1>Quick Link</h1>
-                                    <li>Home</li>
-                                    <li>About us</li>
-                                    <li>Blog</li>
-                                    <li>product</li>
-                                    <li>contact us</li>
+                                    <Link to="/"><li>Home</li></Link>
+                                    <Link to="/About"><li>About Us</li></Link> 
+                                    <Link to="/Blog"><li>Blog</li></Link>
+                                    <Link to="/Product"><li>Product</li></Link>
+                                    <Link to="/Contactus"><li>Contact Us</li></Link>
+                           
                                 </ul>
                             </div>
                             <div className="footer-nav nav-item">

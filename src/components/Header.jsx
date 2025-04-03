@@ -47,7 +47,7 @@ const Header =() =>{
             <div className=" container">
                 <div className="nav-main   ">
                     <div className="logo ">
-                        <img src={logo} alt="Logo" />
+                    <Link to="/"><img src={logo} alt="Logo" /></Link>
                     </div>
                     <div className="nav-item">
                         <ul>
@@ -120,11 +120,11 @@ const Header =() =>{
                     <div className="navs-main non-container">
                         <div className="nav-items">
                             <ul>
-                                <a href="/"><li>Home</li></a> 
-                                <a href="/"><li>About Us</li></a> 
-                                <a href="/"><li>Blog</li></a> 
-                                <a href="/"><li>product</li></a> 
-                                <a href="/"><li>Contact Us</li></a> 
+                            <Link to="/"><li>Home</li></Link>
+                            <Link to="/About"><li>About Us</li></Link> 
+                            <Link to="/Blog"><li>Blog</li></Link>
+                            <Link to="/Product"><li>Product</li></Link>
+                            <Link to="/Contactus"><li>Contact Us</li></Link>
                             </ul>
                         </div>
                         

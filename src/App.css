@@ -782,6 +782,10 @@ footer .footer-main .footer-right .footer-nav h1 {
 footer .footer-main .footer-right .footer-nav ul {
   margin: 5px;
 }
+footer .footer-main .footer-right .footer-nav ul a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
 footer .footer-main .footer-right .footer-nav ul li {
   padding: 0;
   display: inline-block;
@@ -836,10 +840,72 @@ footer .footer-main .footer-right .footer-nav li:hover {
   height: fit-content;
   color: #FFFFFF;
 }
-#product-page .menu .menu-item {
+#product-page .order-main .order-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#product-page .order-main .order-middle {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+#product-page .order-main .order-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-main {
+  background-color: #f8f6f6;
+  color: #121212;
+  padding: 10px 15px;
+  border-radius: 30px;
+}
+.menu-main .menu-card {
+  width: 300px;
+}
+.menu-main .menu-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 30px;
+  border: 2px solid black;
+}
+.menu-main .menu-card .bottom-part .bottom-title {
+  margin: 0;
+}
+.menu-main .menu-card .bottom-part .detail .cup-size {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu-main .menu-card .bottom-part .detail .cup-size label {
+  font-size: 20px;
+}
+.menu-main .menu-card .bottom-part .detail .cup-size p {
+  margin: 0;
+}
+.menu-main .menu-card .bottom-part .detail .cup-size form input {
+  cursor: pointer;
+}
+.menu-main .menu-card .bottom-part .detail .quantity {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu-main .menu-card .bottom-part .detail .quantity p {
+  margin: 0;
+}
+.menu-main .menu-card .bottom-part .detail .quantity button {
+  cursor: pointer;
+  padding: 5px 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+}
+.menu-main .menu-card .bottom-part .detail .menu-btn a {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=App.css.map */
