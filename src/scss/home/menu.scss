@@ -7,7 +7,7 @@
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
-        
+        color: var(--main-color);
         .menu-card{
             width: 250px;
             background-color: #FFF;
@@ -98,6 +98,11 @@
 
 @media screen and (max-width:768px) {
     #menu{
+        .menu-title{
+          h1{
+             font-size:2rem;
+          }
+        }
         .menu-main{
             .menu-card{
                 width: 100%;

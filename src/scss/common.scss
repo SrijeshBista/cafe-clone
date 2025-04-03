@@ -8,6 +8,7 @@ section{
 body{
     background-color:var(--main-color) ;
     font-family: var(--bold-font);
+    color: var(--primary-color);
     
 }
 .non-container{
@@ -26,10 +27,12 @@ body{
         background-color: var(--secondary-color);
         color: #FFFF;
         border: none;
-        border-radius: 20px;
+        border-radius: 64px;
         &:hover{
             transform: scale(1.1);
             background-color: var(--primary-color);
+            color: var(--main-color);
+            border: 2px solid var(--main-color);
             transition: 350ms ease-in-out;
         }
     }

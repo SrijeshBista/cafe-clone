@@ -13,7 +13,7 @@ const Menu = ()=>{
         <>
             <section id="menu">
                 <div className="container">
-                <div className="banner-title">
+                <div className="banner-title menu-title">
                     <h1>Special Items</h1>
                 </div>
                     <div className="menu-main">
@@ -39,8 +39,7 @@ const Menu = ()=>{
                                     </div>
                                     <div className="quantity">
                                         <form>
-                                            <label htmlFor="">Quantity : </label>
-                                            <input type="number"  min="1" max="15"/>
+                                            Quantity :
                                         </form>
                                     </div>
                                     <div className="insidebtn menu-btn">
@@ -72,8 +71,8 @@ const Menu = ()=>{
                                     </div>
                                     <div className="quantity">
                                         <form>
-                                            <label htmlFor="">Quantity : </label>
-                                            <input type="number"  min="1" max="15"/>
+                                            Quantity : 
+                                           
                                         </form>
                                     </div>
                                     <div className="insidebtn menu-btn">
@@ -105,8 +104,8 @@ const Menu = ()=>{
                                     </div>
                                     <div className="quantity">
                                         <form>
-                                            <label htmlFor="">Quantity : </label>
-                                            <input type="number"  min="1" max="15"/>
+                                          Quantity : 
+                                            
                                         </form>
                                     </div>
                                     <div className="insidebtn menu-btn">
@@ -138,8 +137,7 @@ const Menu = ()=>{
                                     </div>
                                     <div className="quantity">
                                         <form>
-                                            <label htmlFor="">Quantity : </label>
-                                            <input type="number"  min="1" max="15"/>
+                                            Quantity : 
                                         </form>
                                     </div>
                                     <div className="insidebtn menu-btn">
@@ -158,8 +156,7 @@ const Menu = ()=>{
                                 <div className="detail">
                                     <div className="quantity">
                                         <form>
-                                            <label htmlFor="">Quantity : </label>
-                                            <input type="number"  min="1" max="15"/>
+                                            Quantity : 
                                         </form>
                                     </div>
                                     <div className="insidebtn menu-btn">
@@ -178,8 +175,7 @@ const Menu = ()=>{
                                 <div className="detail">
                                     <div className="quantity">
                                         <form>
-                                            <label htmlFor="">Quantity : </label>
-                                            <input type="number"  min="1" max="15"/>
+                                            Quantity :
                                         </form>
                                     </div>
                                     <div className="insidebtn menu-btn">
@@ -198,8 +194,7 @@ const Menu = ()=>{
                                 <div className="detail">
                                     <div className="quantity">
                                         <form>
-                                            <label htmlFor="">Quantity : </label>
-                                            <input type="number"  min="1" max="15"/>
+                                            Quantity :
                                         </form>
                                     </div>
                                     <div className="insidebtn menu-btn">
@@ -218,8 +213,7 @@ const Menu = ()=>{
                                 <div className="detail">
                                     <div className="quantity">
                                         <form>
-                                            <label htmlFor="">Quantity : </label>
-                                            <input type="number"  min="1" max="15"/>
+                                            Quantity : 
                                         </form>
                                     </div>
                                     <div className="insidebtn menu-btn">

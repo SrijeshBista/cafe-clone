@@ -1,0 +1,99 @@
+footer{
+    border-top: 2px solid var(--primary-color);
+   margin-top: 2%;
+   padding-top: 10px;
+   height: 40vh;
+    .footer-main{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .footer-left{
+            width: 30%;
+            .footer-logo{
+                width: 120px;
+                img{
+                    width: 100%;
+                }
+            }
+            .social-media{
+                font-size: 40px;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                gap: 30px;
+                cursor: pointer;
+            }
+        }
+        .footer-right{
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            gap: 20px;
+            .footer-nav {
+                h1{
+                margin: 0;
+                }
+               ul{
+                margin: 5px;
+               
+                li{
+                    padding: 0;
+                    display: inline-block;
+                    display: flex;
+                    // justify-content: space-between;
+                    align-items: center;
+                    gap: 20px;
+                    font-weight: 600;
+                    margin-right: 20px;
+                    cursor: pointer;
+                }
+                p{
+                    margin: 0;
+                    padding: 0;
+                    font-weight: 600;
+                    margin-right: 20px;
+                    cursor: pointer;
+                }
+            }
+            
+            li:hover{
+                font-size: 20px;
+                transition: 200ms ease-in-out;
+              
+            }
+        }
+        }
+    }
+}
+
+
+// responsive for mobile 
+@media screen and (max-width:768px){
+    footer{
+        height: fit-content;
+        .footer-main{
+            flex-direction: column;
+            align-items: start;
+            .footer-left{
+                width: 100%;
+            }
+            .footer-right{
+                width: 100%;
+                flex-direction: column;
+                margin-top: 20px;
+                ul{
+                    padding: 0;
+                    margin-top: 20px;
+                }
+            }
+           
+        }
+    }
+    .copy-right{
+        margin-top: 25px;
+
+        span{
+        font-size: 14px;
+        }
+    }
+}

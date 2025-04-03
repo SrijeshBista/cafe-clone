@@ -5,15 +5,18 @@ import Header from '../components/Header';
 import Menu from "../components/Menu";
 import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
+import { createBrowserRouter } from "react-router-dom";
 const HomePage =()=>{
+   
+
 return(
     <>
-    <Header />
+   
+
     <Banner />
     <AboutSection />
     <Menu/>
     <ContactSection/>
-    <Footer/>
     </>
 )
 }

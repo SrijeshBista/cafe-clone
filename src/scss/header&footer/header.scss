@@ -7,13 +7,15 @@ nav{
     width: 100%;
     background-color: var(--main-color);
     z-index: 2;
+
     .nav-main{
         border-bottom: 1px solid black;
         display: flex;
         justify-content: space-between;
         align-items: center;  
+
         .logo{
-            width: 100px;
+            width: 77px;
             // margin: 0 20px;
     
             img{
@@ -24,6 +26,10 @@ nav{
         }
         .nav-item{
             margin-left: 70px;
+            a{
+                color: #FFFFFF;
+                text-decoration: none;
+            }
                 li{
                     font-weight: 600;
                     display: inline;
@@ -38,8 +44,47 @@ nav{
                 }
             
         }
+        .addtocard{
+            button{
+                border: none;
+                background-color: transparent;
+                font-size: 30px;
+                cursor: pointer;
+                color: var(--primary-color);
+            }
+           
+        }
         .search-area{
-          
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            .addtocard{
+                position: relative;
+                
+                .addtocard-main{
+                height: fit-content;
+                position: absolute;
+                top: 170%;
+                left: -500%;
+                background-color: #FFFFFF;
+                    width: 500px;
+                // position: fixed;
+                .addTC{
+                  
+                    
+                }
+                    .card-title{
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        h1{
+                        margin: 0;
+                        
+                        }
+                    }
+                }
+            }
             form{
                 border: 1px solid var(--primary-color);
                 width: 85%;
@@ -48,6 +93,7 @@ nav{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+               
                 input{
                     background-color: transparent;
                     border: none;
@@ -164,9 +210,16 @@ nav{
                 }
             }
         }
+      
         .search-area{
             display: none;
+            .addtocard{
+                display: block;
+                
+            }
+          
         }
+       
      
         .hamburger-bar{
             display: block;
@@ -176,6 +229,7 @@ nav{
                 border: none;
                 background-color: transparent;
                 font-size: 25px;
+                color: #FFFFFF;
             }
         }
     }
