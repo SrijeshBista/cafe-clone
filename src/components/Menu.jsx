@@ -12,6 +12,8 @@ import ClassicColdCoffee from "../assets/Classic Cold Coffee.png"
 import Affogato from "../assets/Affogato.png";
 import coldbrew from "../assets/Cold-Brew.png";
 import Americano from "../assets/Americano.png";
+import AddToCard from './AddToCard';
+
 const Product = (props) => {
   return (
     <section id="product-page">
@@ -20,22 +22,13 @@ const Product = (props) => {
           <h1>Menu</h1>
         </div>
         <div className="order-main">
-            <h1>HOT Drinks</h1>
-          <div className="order-top">
-            <Card name="Cappuccino" price={300} imageSrc={Coffeeimg} />
-            <Card name="Latte" price={350} imageSrc= {latteimg}/>
-            <Card name="Cortado" price={300} imageSrc={cortadoimg} />
-            <Card name="Espresso" price={250} imageSrc={espressoimg} />
-          </div>
-          <h1>Bakery Item</h1>
-          <div className="order-middle" >
-              <Card name="Coissants" price={150} imageSrc={crossants}/>
-              <Card name="Brown Bread" price={120} imageSrc={brownbread}/>
-              <Card name="Cup Cake" price={50} imageSrc={cupcake}/>
-              <Card name="French Bread " price={200} imageSrc={FrenchBaguette}/>
-          </div>
-       
           
+          <div className="order-top">
+              <AddToCard name="Cappuccino" price={300} imageSrc={Coffeeimg} />
+              <AddToCard name="Espresso" price={250} imageSrc={espressoimg} />
+              <AddToCard name="Cup Cake" price={50} imageSrc={cupcake}/>
+              <AddToCard name="French Bread " price={200} imageSrc={FrenchBaguette}/>
+          </div>   
         </div>
       </div>
     </section>

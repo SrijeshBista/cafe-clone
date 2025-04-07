@@ -55,7 +55,7 @@ const Card = ({ name, price, imageSrc })  => {
               
             </div>
             <div className="insidebtn menu-btn">
-            <Link to="Product">  <button>Order Now <IoBagHandle /></button></Link>
+            <Link to="">  <button>Order Now <IoBagHandle /></button></Link>
             </div>
           </div>
         </div>

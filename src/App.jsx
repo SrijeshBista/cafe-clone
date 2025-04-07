@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import { BrowserRouter as Router, Route, Routes, createBrowserRouter, RouterProvider } from "react-router-dom";
 import HomePage from './page/HomePage'
-import './App.css'
+import "./App.css";
 import AboutPage from './page/AboutPage';
 import Product from './page/Product';
 import Header from './components/Header';

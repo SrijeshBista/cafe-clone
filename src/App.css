@@ -106,6 +106,9 @@ body {
 #banner .banner-main .banner-left .des .insidebtn {
   padding: 10px;
 }
+#banner .banner-main .banner-left .des .insidebtn a {
+  text-decoration: none;
+}
 #banner .banner-main .banner-left .des .insidebtn button {
   font-size: 20px;
   padding: 10px 20px;
@@ -169,7 +172,6 @@ body {
   text-align: start;
 }
 #banner .banner-main .right-side .detail {
-  cursor: pointer;
   background-color: white;
   box-shadow: 3px 3px 3px 3px var(--primary-color);
   border: 1px solid var(--primary-color);
@@ -180,11 +182,6 @@ body {
   justify-content: space-around;
   width: 250px;
   z-index: 1;
-}
-#banner .banner-main .right-side .detail:hover {
-  transform: scale(1.1);
-  rotate: -5deg;
-  transition: 300ms ease-in-out;
 }
 #banner .banner-main .right-side .detail icon {
   font-size: 2.2rem;
@@ -197,9 +194,6 @@ body {
 #banner .banner-main .right-side .detail p {
   width: 90%;
   margin: 0;
-}
-#banner .banner-main .right-side .details:hover {
-  rotate: 5deg;
 }
 
 @media screen and (max-width: 768px) {
@@ -379,6 +373,10 @@ body {
   padding-top: 20px;
   height: fit-content;
 }
+#menu a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
 #menu .menu-main {
   display: flex;
   justify-content: space-between;
@@ -519,6 +517,9 @@ body {
 }
 #about .about-main .about-right .about-us-des {
   color: rgb(102, 100, 100);
+}
+#about .about-main .about-right a {
+  text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -862,6 +863,10 @@ footer .footer-main .footer-right .footer-nav li:hover {
   padding: 10px 15px;
   border-radius: 30px;
 }
+.menu-main a {
+  text-decoration: none;
+  color: #121212;
+}
 .menu-main .menu-card {
   width: 300px;
 }
@@ -906,6 +911,42 @@ footer .footer-main .footer-right .footer-nav li:hover {
 }
 .menu-main .menu-card .bottom-part .detail .menu-btn a {
   text-decoration: none;
+}
+
+#about-page {
+  padding-top: 8%;
+  height: fit-content;
+}
+#about-page .about-page-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#about-page .about-page-main .about-left {
+  width: 60%;
+  margin-top: 30px;
+}
+#about-page .about-page-main .about-left img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 20px;
+  filter: grayscale(1);
+  cursor: pointer;
+}
+#about-page .about-page-main .about-left img:hover {
+  filter: grayscale(0);
+  transition: 300ms ease-in-out;
+}
+#about-page .about-page-main .about-right {
+  width: 48%;
+  padding: 10px 20px;
+}
+#about-page .about-page-main .about-right .about-title h1 {
+  padding: 0;
+}
+#about-page .about-page-main .about-right .about-us-des {
+  color: rgb(102, 100, 100);
 }
 
 /*# sourceMappingURL=App.css.map */

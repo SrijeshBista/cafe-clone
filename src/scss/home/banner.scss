@@ -47,6 +47,9 @@
                 }
                 .insidebtn{
                     padding: 10px;
+                    a{
+                        text-decoration: none;
+                    }
                     button{
                         font-size: 20px;
                         padding: 10px 20px;
@@ -120,7 +123,7 @@
             text-align: start;
             
             .detail{
-                cursor: pointer;
+                
                 background-color: #FFFF;
                 box-shadow: 3px 3px 3px 3px var(--primary-color);
                 border: 1px solid var(--primary-color);
@@ -131,11 +134,7 @@
                 justify-content: space-around;
                 width: 250px;
                 z-index: 1;
-                &:hover{
-                    transform: scale(1.1);
-                    rotate: -5deg;
-                    transition: 300ms ease-in-out;
-                }
+              
                 icon{
                     // border: 2px solid black;
                     font-size: 2.2rem;
@@ -151,11 +150,7 @@
                     margin: 0;
                 }
             }
-            .details{
-                &:hover{
-                    rotate: 5deg;
-                }
-            }
+           
         }
     }
 }

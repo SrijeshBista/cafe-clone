@@ -5,6 +5,7 @@ import { BsCup } from "react-icons/bs";
 import { GiCupcake } from "react-icons/gi";
 import { PiBreadFill } from "react-icons/pi";
 import { LiaCookieSolid } from "react-icons/lia";
+import { Link } from "react-router-dom";
 const images =[
         "https://imgs.search.brave.com/HmiCbuiPSbADoVrz5b7c5Ke-hMrhj-0SK8iCijRoEY4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuaW1tZWRpYXRl/LmNvLnVrL3Byb2R1/Y3Rpb24vdm9sYXRp/bGUvc2l0ZXMvMzAv/MjAyMi8wNS9Db3J0/YWRhLTJlMDEwNzcu/cG5nP3F1YWxpdHk9/OTAmcmVzaXplPTU1/Niw1MDU",
         "https://imgs.search.brave.com/V1UJz6t7GKiyF3xvXzVw7l36OuW8ul4mWGSI72y6dd4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTg2/ODM1NTk5L3Bob3Rv/L2ljZS1jb2ZmZWUu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PVF3UFhzU0JsR2F4/WGNxZDgxczZXcWZL/bmdWZnN1RWh4SlJZ/MW02S3Rya0U9",
@@ -53,7 +54,7 @@ const prevslide =() =>{
                     <div className="des">
                         <p>Welcome to Coffee Cup Café, where every sip is crafted with passion and warmth. Nestled in the heart of town, our café is more than just a place to grab a cup of coffee—it’s a cozy retreat for those who appreciate quality, comfort, and connection. </p>
                         <div className="insidebtn">
-                            <button>More...</button>
+                        <Link to="About"><button>See More</button></Link>
                         </div>
                     </div>
                     <div className="right-side">

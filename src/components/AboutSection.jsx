@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import aboutimg from "../assets/CoffeeCup.png"
+import { Link } from "react-router-dom";
 const AboutSection = () =>{
     return(
         <>
@@ -18,7 +19,7 @@ const AboutSection = () =>{
                            Our passion for quality is reflected in every sip. We source only the finest coffee beans, roast them to perfection, and prepare each drink with love and expertise. Pair your favorite coffee with our delicious homemade pastries, cakes, and snacks—all made fresh daily.</p>
                     </div>
                     <div className="insidebtn abt-btn">
-                        <button>See More...</button>
+                    <Link to="About"><button>See More</button></Link>
                     </div>
                 </div>
             </div>

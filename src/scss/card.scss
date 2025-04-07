@@ -3,6 +3,10 @@
     color: #121212;
     padding: 10px 15px;
     border-radius: 30px;
+    a{
+        text-decoration: none;
+        color: #121212;
+    }
     .menu-card{
         width: 300px;
         img{
@@ -28,6 +32,7 @@
                     form{
                         input{
                             cursor: pointer;
+                        
                         }
                     }
                      display: flex;

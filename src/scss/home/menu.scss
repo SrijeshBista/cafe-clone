@@ -1,13 +1,17 @@
 #menu{
     padding-top: 20px;
     height: fit-content;
-  
+    a{
+        color:var(--secondary-color) ;
+        text-decoration: none;
+    }
     .menu-main{
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
         color: var(--main-color);
+        
         .menu-card{
             width: 250px;
             background-color: #FFF;
@@ -16,11 +20,13 @@
             padding: 20px 30px;
             margin-top: 50px;
           
+          
             img{
                 width: 100%;
                 height: 200px;
                 border-radius: 20px;
                 object-fit: cover;
+                
             }
             .bottom-part{
                 .bottom-title{
@@ -37,9 +43,12 @@
                             font-size: 23px;
                             font-weight:600 ;
                             color:var(--secondary-color) ;
+                           
                             
                         }
+                       
                     }
+                   
                 }
                 .detail{
                     .cup-size{
