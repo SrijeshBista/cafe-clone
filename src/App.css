@@ -773,6 +773,9 @@ footer .footer-main .footer-left .social-media {
 footer .footer-main .footer-left .social-media .icons {
   cursor: pointer;
 }
+footer .footer-main .footer-left .social-media a {
+  color: #FFFFFF;
+}
 footer .footer-main .footer-right {
   display: flex;
   justify-content: space-between;

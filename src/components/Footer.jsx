@@ -17,10 +17,10 @@ const Footer =()=> {
                             <p>At Coffee Cup Café, we believe in the magic of a perfectly brewed cup.</p>
                         </div>
                         <div className="social-media">
-                             <div className="icons"><FaFacebook/></div>
-                             <div className="icons"><FaInstagram /></div>
-                             <div className="icons"><FaLinkedin /></div>
-                             <div className="icons"><FaTwitter /></div>
+                            <div className="icons"><Link to="https://www.facebook.com/"><FaFacebook /></Link></div>
+                            <div className="icons"><Link to="https://www.instagram.com/"><FaInstagram /></Link></div>
+                            <div className="icons"><Link to="https://www.linkedin.com/"><FaLinkedin /></Link></div>
+                            <div className="icons"><Link to="https://x.com/?lang=en"><FaTwitter /></Link></div>
                         </div>
                     </div>
                     <div className="footer-right">
