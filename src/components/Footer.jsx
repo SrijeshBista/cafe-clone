@@ -1,6 +1,6 @@
 import { useEffect,useState } from "react";
 import logos from "../assets/cafe.png"
-import { FaFacebook , FaInstagram } from "react-icons/fa";
+import { FaFacebook , FaInstagram , FaLinkedin , FaTwitter  } from "react-icons/fa";
 import { BrowserRouter } from "react-router-dom";
 import { Link } from "react-router-dom";
 const Footer =()=> {
@@ -17,8 +17,10 @@ const Footer =()=> {
                             <p>At Coffee Cup Café, we believe in the magic of a perfectly brewed cup.</p>
                         </div>
                         <div className="social-media">
-                                <FaFacebook/>
-                                <FaInstagram />
+                             <div className="icons"><FaFacebook/></div>
+                             <div className="icons"><FaInstagram /></div>
+                             <div className="icons"><FaLinkedin /></div>
+                             <div className="icons"><FaTwitter /></div>
                         </div>
                     </div>
                     <div className="footer-right">
@@ -55,7 +57,7 @@ const Footer =()=> {
             </div>
         </footer>
                 <div className="copy-right container">
-                    <span>©Copyright 2025 , developed by BlueBug software</span>
+                    <span>©Copyright 2025 , developed by BlueBug Software</span>
                 </div>
         </>
     )

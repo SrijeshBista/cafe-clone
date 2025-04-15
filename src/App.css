@@ -769,6 +769,8 @@ footer .footer-main .footer-left .social-media {
   justify-content: start;
   align-items: center;
   gap: 30px;
+}
+footer .footer-main .footer-left .social-media .icons {
   cursor: pointer;
 }
 footer .footer-main .footer-right {
@@ -947,6 +949,169 @@ footer .footer-main .footer-right .footer-nav li:hover {
 }
 #about-page .about-page-main .about-right .about-us-des {
   color: rgb(102, 100, 100);
+}
+
+#blog {
+  height: fit-content;
+  padding-top: 8%;
+}
+#blog .blog-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+#blog .blog-main .Blog-card {
+  width: 25%;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: #FFFFFF;
+  color: #121212;
+}
+#blog .blog-main .Blog-card .blog-img {
+  width: 100%;
+}
+#blog .blog-main .Blog-card .blog-img img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+#blog .blog-main .Blog-card .blog-title {
+  font-weight: 600;
+}
+
+#contact-page {
+  padding-top: 8%;
+  height: fit-content;
+}
+#contact-page .contact-page-main {
+  display: flex;
+  justify-content: space-between;
+}
+#contact-page .contact-page-main .conatact-form-left {
+  width: 40%;
+  padding: 40px 30px;
+}
+#contact-page .contact-page-main .conatact-form-left .contact-title h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+#contact-page .contact-page-main .conatact-form-left .contact-detail ul {
+  padding: 0;
+}
+#contact-page .contact-page-main .conatact-form-left .contact-detail ul li {
+  font-size: 18px;
+  padding: 10px 20px;
+  list-style: none;
+}
+#contact-page .contact-page-main .conatact-form-left .social-media h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+#contact-page .contact-page-main .conatact-form-left .social-media .instra {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 2rem;
+  padding: 10px 20px;
+}
+#contact-page .contact-page-main .conatact-form-left .social-media .instra .icons {
+  cursor: pointer;
+}
+#contact-page .contact-page-main .conatact-form-left .social-media .instra .icons a {
+  color: #FFFFFF;
+}
+#contact-page .contact-page-main .contact-form-right {
+  border: 2px solid #121212;
+  width: 35%;
+  height: 530px;
+  padding: 40px 30px;
+  border-radius: 64px;
+}
+#contact-page .contact-page-main .contact-form-right .banner-title {
+  text-align: center;
+}
+#contact-page .contact-page-main .contact-form-right form label {
+  text-align: start;
+}
+#contact-page .contact-page-main .contact-form-right form input {
+  width: 55%;
+  padding: 10px;
+  height: 30px;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--primary-color);
+  background-color: transparent;
+  color: var(--primary-color);
+  margin-bottom: 30px;
+}
+#contact-page .contact-page-main .contact-form-right form input::placeholder {
+  color: gray;
+}
+#contact-page .contact-page-main .contact-form-right form textarea {
+  width: 100%;
+  padding: 10px;
+  height: 50px;
+  resize: none;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--primary-color);
+  background-color: transparent;
+  color: var(--primary-color);
+  margin-bottom: 30px;
+}
+#contact-page .contact-page-main .contact-form-right form textarea::placeholder {
+  color: gray;
+}
+#contact-page .contact-page-main .contact-form-right form .conatctandemail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+#contact-page .contact-page-main .contact-form-right form .errors {
+  display: flex;
+  gap: 12%;
+  align-items: center;
+  color: #ff3333;
+}
+#contact-page .contact-page-main .contact-form-right form .Errors {
+  display: flex;
+  gap: 20%;
+  align-items: center;
+  color: #ff3333;
+}
+#contact-page .contact-page-main .contact-form-right form button {
+  --😀: #644dff;
+  --😀😀: #4836bb;
+  --😀😀😀: #654dff63;
+  cursor: pointer;
+  width: 184px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.125em;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #fff;
+  background: var(--😀);
+  border: 2px solid var(--😀😀);
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 0 var(--😀😀);
+  transform: skew(-10deg);
+  transition: all 0.1s ease;
+  filter: drop-shadow(0 15px 20px var(--😀😀😀));
+}
+#contact-page .contact-page-main .contact-form-right form button:active {
+  letter-spacing: 0px;
+  transform: skew(-10deg) translateY(8px);
+  box-shadow: 0 0 0 var(--😀😀😀);
 }
 
 /*# sourceMappingURL=App.css.map */

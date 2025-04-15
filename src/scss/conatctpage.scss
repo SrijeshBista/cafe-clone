@@ -1,0 +1,147 @@
+#contact-page{
+    padding-top: 8%;
+    height: fit-content;
+    .contact-page-main{
+       display: flex;
+       justify-content: space-between;
+        .conatact-form-left{
+            width: 40%;
+            padding: 40px 30px;
+            // text-align: center;
+            .contact-title{
+               h1{
+                font-size: 3rem;
+                margin: 0;
+               }
+            }
+            .contact-detail{
+                ul{
+                    padding: 0;
+                    li{
+                        font-size: 18px;
+                        padding: 10px 20px;
+                        list-style: none;
+                    }
+                    
+                }
+            }
+            .social-media{
+                h1{
+                    font-size: 3rem;
+                    margin: 0;
+                }
+                .instra{
+                    display: flex;
+                    align-items: center;
+                    gap: 30px;
+                    font-size: 2rem;
+                    padding: 10px 20px;
+                    .icons{
+                        cursor: pointer;
+                        a{
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+            }
+        }
+
+        .contact-form-right{
+         border: 2px solid #121212;
+         width: 35%;
+         height: 530px;
+         padding: 40px 30px;
+        //  background-image: linear-gradient(#020024 , #090979 , #03032f);
+         border-radius: 64px;
+         .banner-title{
+            text-align: center;
+         }
+         form{
+            label{
+                text-align: start;
+                // margin-left: 10px;
+            }
+            input{
+                width: 55%;
+                padding: 10px;
+                height: 30px;
+                font-size: 20px;
+                outline: none;
+                border: none;
+                border-bottom: 1px solid var(--primary-color);
+                background-color: transparent;
+                color:var(--primary-color) ;
+                &::placeholder{
+                    color: gray;
+                }
+                margin-bottom: 30px;
+            }
+          
+            textarea{
+                width: 100%;
+                padding: 10px;
+                height: 50px;
+                resize: none;
+                font-size: 20px;
+                outline: none;
+                border: none;
+                border-bottom: 1px solid var(--primary-color);
+                background-color: transparent;
+                color:var(--primary-color) ;
+                &::placeholder{
+                    color: gray;
+                }
+                margin-bottom: 30px;
+            }
+            .conatctandemail{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 20px;
+            }
+            .errors{
+                display: flex;
+                // justify-content: space-evenly;
+                gap: 12%;
+                align-items:center ;
+                color: #ff3333;
+            }
+            .Errors{
+                display: flex;
+                // justify-content: space-evenly;
+                gap: 20%;
+                align-items:center ;
+                color: #ff3333;
+            }
+            button{
+                --😀: #644dff;
+                --😀😀: #4836bb;
+                --😀😀😀: #654dff63;
+                cursor: pointer;
+                width: 184px;
+                height: 48px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+                font-size: 1.125em;
+                font-weight: 800;
+                letter-spacing: 2px;
+                color: #fff;
+                background: var(--😀);
+                border: 2px solid var(--😀😀);
+                border-radius: .75rem;
+                box-shadow: 0 8px 0 var(--😀😀);
+                transform: skew(-10deg);
+                transition: all .1s ease;
+                filter: drop-shadow(0 15px 20px var(--😀😀😀));
+            }
+            button:active {
+                letter-spacing: 0px;
+                transform: skew(-10deg) translateY(8px);
+                box-shadow: 0 0 0 var(--😀😀😀);
+              }
+         }
+        }
+    }
+}   

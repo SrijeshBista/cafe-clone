@@ -21,7 +21,10 @@ footer{
                 justify-content: start;
                 align-items: center;
                 gap: 30px;
-                cursor: pointer;
+                .icons{
+                    cursor: pointer;
+                }
+                
             }
         }
         .footer-right{
