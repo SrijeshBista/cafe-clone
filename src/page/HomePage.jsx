@@ -11,12 +11,12 @@ const HomePage =()=>{
 
 return(
     <>
-   
-
+   <Header/>
     <Banner />
     <AboutSection />
     <Menu/>
     <ContactSection/>
+    <Footer/>
     </>
 )
 }

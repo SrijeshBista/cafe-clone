@@ -68,17 +68,21 @@ const Header =() =>{
                           
                             <div className="addtocard-main">
                                 <div className="addTC">
-
-                                    <div className="card-title">
                                     <button onClick={closeaddtocard}>X</button>
-                                        <h1>Your Product</h1>
-                                    </div>
-                                    <div className="products">
-                                        <table>
-                                            <tr>srijiesh</tr>
-                                        </table>
-                                    </div>
                                 </div>
+                                <table>
+                                  
+                                  <tr>
+                                    <td>abc</td>
+                                    <td>khe</td>
+                                    <td>hjoe;g</td>
+                                  </tr>
+                                  <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                </table>
 
                             </div>
                             </>
@@ -97,7 +101,7 @@ const Header =() =>{
                         
                         <div>
                             <button><IoIosSearch/></button>
-                            <button onClick={closeserach}>X</button>
+                            {/* <button onClick={closeserach}>X</button> */}
                         </div>
                     </form>
                    
@@ -116,7 +120,7 @@ const Header =() =>{
 
 
                    {showhamburger &&(
-                <>
+                    <>
                     <div className="navs-main non-container">
                         <div className="nav-items">
                             <ul>
@@ -133,9 +137,11 @@ const Header =() =>{
                             <button onClick={closehamburger}>X</button>
                         </div>
                     </div>
-                </>
-                   )}
-                  
+                    </>
+                    )}
+                    <div className="login">
+                            <Link to="/LoginPage"><button>Login </button></Link>
+                    </div>
                 </div> 
                 {/* addtocard  */}
                 

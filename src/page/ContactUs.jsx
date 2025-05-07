@@ -3,7 +3,8 @@ import { FaLocationDot } from "react-icons/fa6";
 import { IoMail } from "react-icons/io5";
 import { FaPhoneAlt, FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { Link } from "react-router-dom";
-
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 const ContactUs = () => {
   const [form, setForm] = useState({
     FirstName: "",
@@ -15,7 +16,7 @@ const ContactUs = () => {
   const [number, setNumber] = useState("");
   const [error, setError] = useState("");
   const [errors, setErrors] = useState({});
-  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
 
   // Nepal phone number pattern (starts with 98/97/96 and 10 digits total)
   const nepaliPattern = /^(98|97|96)\d{8}$/;
@@ -23,7 +24,7 @@ const ContactUs = () => {
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
-
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
   const handleChangenumber = (e) => {
     const input = e.target.value.replace(/\D/g, ""); // Only digits
     if (input.length <= 10) {
@@ -49,7 +50,7 @@ const ContactUs = () => {
     if (!form.email.trim()) {
       tempErrors.email = "Email is required!";
     } else if (!/\S+@\S+\.\S+/.test(form.email)) {
-      tempErrors.email = "Invalid email format!";
+      tempErrors.email = "Invalid email !";
     }
 
     setErrors(tempErrors);
@@ -57,25 +58,27 @@ const ContactUs = () => {
     return Object.keys(tempErrors).length === 0 && nepaliPattern.test(number);
   };
 
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validateForm()) {
-      setIsPopupOpen(true);
       setForm({ FirstName: "", LastName: "", email: "", message: "" });
       setNumber("");
       setErrors({});
+      setIsPopupOpen(true);
       setError("");
     }
   };
 
   return (
     <>
+    <Header/>
       <section id="contact-page">
         <div className="contact-page-main container">
           {/* Left side */}
           <div className="conatact-form-left">
             <div className="contact-title"><h1>Get In Touch</h1></div>
-            <ul className="contact-detail">
+            <ul className="con-detail">
               <li><FaLocationDot /> Lakeside, Pokhara, Nepal</li>
               <li><IoMail /> Coffeecup356@gmail.com</li>
               <li><FaPhoneAlt /> 01-4434452</li>
@@ -141,17 +144,19 @@ const ContactUs = () => {
 
               <button type="submit">Submit</button>
             </form>
+            {isPopupOpen && (
+        <div className="popup">
+          <div className="popup-content">
+            <h2>Form Submitted Successfull</h2>
+            <button onClick={() => setIsPopupOpen(false)}>X</button>
+          </div>
+        </div>
+        )}
           </div>
         </div>
       </section>
 
-      {/* Success Popup */}
-      {isPopupOpen && (
-        <div className="popup">
-          <p>✅ Form submitted successfully!</p>
-          <button onClick={() => setIsPopupOpen(false)}>Close</button>
-        </div>
-      )}
+     <Footer/>
     </>
   );
 };

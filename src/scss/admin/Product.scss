@@ -1,0 +1,120 @@
+.admin-main{
+    .right-side{
+        height: fit-content;
+        margin: 0px 0;
+        padding: 5px 10px;
+        #Product-Item{
+            height: fit-content;
+            .product-item-main{
+                // border: 2px solid red;
+                border-radius: 25px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                padding: 10px 20px ;
+                display: flex;
+                justify-content: space-between;
+                align-items: start;
+                background-color: #FFFFFFFF;
+              
+                .product-left{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 20px 30px;
+                    overflow: scroll;
+                    height: 80vh;
+                }
+                .product-right{
+                   
+                    padding: 20px 30px;
+                  
+                    border-radius: 20px;
+                    .detail-form{
+                        
+                        border: 2px solid sandybrown;
+                        text-align: center;
+                        padding: 20px 30px;
+                        margin: 40px 10px;
+                        border-radius: 24px;
+                        /* From https://css.glass */
+                        background: rgba(226, 226, 226, 0.784);
+                        border-radius: 16px;
+                        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                        backdrop-filter: blur(5px);
+                        -webkit-backdrop-filter: blur(5px);
+                        border: 1px solid rgba(255, 255, 255, 0.141);
+                        form{
+                            h1{
+                                margin: 0;
+                                font-size: 40px;
+                                padding: 10px 20px;
+                            }
+                            input{
+                                width: 90%;
+                                margin-top: 20px;
+                                margin-bottom: 20px;
+                                padding: 10px 20px;
+                                outline: none;
+                                border-radius: 10px;
+                                border: none;
+                                border-bottom: 2px solid black;
+                                font-size: 20px;
+                            }
+                            input[type=file]{
+                               border: 2px solid black;
+                               padding: 20px 5px;
+                               font-size: 17px;
+                            }
+                            .button-btn{
+                                button{
+                                    padding: 7px 20px;
+                                    border-radius: 20px;
+                                    border: none;
+                                    background-color: rgb(0, 183, 255);
+                                    cursor: pointer;
+                                    font-size: 20px;
+                                    color: #FFFFFF;
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// product prop scss 
+.product-first{
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 50px;
+    }
+    p{
+        font-size: 20px;
+        display: flex;
+    }
+    img{
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+    button{
+        cursor: pointer;
+        background-color: transparent;
+        border-radius: 8px;
+        padding: 5px 20px;
+        font-size: 18px;
+        &:hover{
+            transition: 700ms ease-in-out;
+            transform: translateY(-10px);
+            background-color:rgba(0, 247, 255, 0.455);
+           color: #888787;
+           
+        }
+    }
+}

@@ -1,9 +1,13 @@
 import React from 'react';
 import aboutimg from "../assets/CoffeeCup.png"
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 const AboutPage =()=>{
   return  (
+    <>
+    <Header/>
     <section id="about-page">
-      <div className="about-page-main">
+      <div className="about-page-main container">
       
                         <div className="about-left">
                             <img src={aboutimg} alt="Cafe pic" />
@@ -26,6 +30,8 @@ const AboutPage =()=>{
                     
       </div>
     </section>
+    <Footer/>
+    </>
   )
 }
 

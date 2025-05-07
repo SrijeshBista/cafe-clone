@@ -12,8 +12,12 @@ import ClassicColdCoffee from "../assets/Classic Cold Coffee.png"
 import Affogato from "../assets/Affogato.png";
 import coldbrew from "../assets/Cold-Brew.png";
 import Americano from "../assets/Americano.png";
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 const Product = (props) => {
   return (
+    <>
+    <Header/>
     <section id="product-page">
       <div className="container">
         <div className="banner-title">
@@ -44,6 +48,8 @@ const Product = (props) => {
         </div>
       </div>
     </section>
+    <Footer/>
+    </>
   );
 };
 

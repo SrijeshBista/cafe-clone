@@ -14,16 +14,15 @@
                 margin: 0;
                }
             }
-            .contact-detail{
-                ul{
-                    padding: 0;
+            .con-detail{
+              padding: 0;
                     li{
                         font-size: 18px;
                         padding: 10px 20px;
                         list-style: none;
                     }
                     
-                }
+                
             }
             .social-media{
                 h1{
@@ -53,6 +52,19 @@
          padding: 40px 30px;
         //  background-image: linear-gradient(#020024 , #090979 , #03032f);
          border-radius: 64px;
+         .popup{
+            .popup-content{
+                button{
+                    cursor: pointer;
+                    color: #ff3333;
+                    background-color:rgba(165, 42, 42, 0.899);
+                    // border: 2px solid black;
+                    border-radius: 20px;
+                    padding: 5px 20px;
+                    font-size: 20px;
+                }
+            }
+         }
          .banner-title{
             text-align: center;
          }

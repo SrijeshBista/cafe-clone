@@ -1,0 +1,62 @@
+// side nav scss 
+header{
+.sidenav-main{
+    display: flex;
+    justify-content:space-between;
+    position: fixed;
+    flex-direction: column;
+    height: 60vh;
+    width: 13%;
+    .logo{
+        width: 100px;
+        img{
+            width: 100%;
+        }
+    }
+    .nav-bar{
+        ul{
+            padding: 0;
+         margin-top: 30px;
+            li{
+                font-size: 27px;
+                list-style: none;
+                font-weight: 600;
+                cursor: pointer;
+                margin-top: 40px;
+                
+                &:hover{
+                    transform: scale(1.2);
+                    transition: 300ms ease-in-out;
+                } 
+                .nav-link{
+                    color: #FFFFFF;
+                }         
+                .active{
+                    font-weight: bold;
+                    color: rgb(0, 123, 255);
+                    font-size: 30px;
+                }
+            }
+            a{
+                text-decoration: none;
+
+            }
+        }
+    }
+    .logout-btn{
+        button{
+            padding: 5px 20px;
+            font-size: 20px;
+            border-radius: 20px;
+            border: none;
+            background-color: red;
+            color: #FFFFFF;
+            cursor: pointer;
+            &:hover{
+                background-color: rgba(255, 0, 0, 0.437);
+                transition: 400ms ease-in-out;
+            }
+        }
+    }
+}
+}
