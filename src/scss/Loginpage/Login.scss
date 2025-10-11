@@ -4,7 +4,7 @@
   border-radius: 64px;
   border: 1px solid white;
   width: 25%;
-  height: 400px;
+  height: fit-content;
   margin-top: 11%;
   padding: 10px 20px;
   h2{
@@ -43,3 +43,74 @@
     }
   }
 }
+#login{
+  height: fit-content;
+  table{
+    margin: 30px 20px;
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 30px;
+    tr{
+      th{
+        
+        border: 1px solid white;
+        padding: 10px;
+
+      }
+      td{
+        border: 1px solid white;
+        padding: 10px;
+      }
+      button{
+        padding: 5px 20px;
+        border-radius: 8px;
+        font-size: 20px;
+        border: 1px solid black;
+        cursor: pointer;
+      }
+      span{
+        button{
+        }
+      }
+    }
+  }
+}
+
+
+
+// siginup
+.secondary{
+  padding: 30px;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 20px;
+  width: 25%;
+  margin-top: 11%;
+  padding: 10px 50px;
+  height: 600px;
+}
+#signup{
+  height: fit-content;
+  table{
+    margin: 30px 20px;
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 30px;
+    tr{
+      th{
+        
+        border: 1px solid white;
+        padding: 10px;
+
+      }
+      td{
+        border: 1px solid white;
+        padding: 10px;
+      }
+    }
+   
+  }
+}
+
+
+

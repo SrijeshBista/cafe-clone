@@ -6,69 +6,35 @@ import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 const ContactUs = () => {
-  const [form, setForm] = useState({
-    FirstName: "",
-    LastName: "",
-    email: "",
-    message: ""
+
+
+  const [contactData, setcontactData]=useState({
+    FirstName:"",
+    LastName:"",
+    number:"",
+    email:"",
+    message:"",
   });
-
-  const [number, setNumber] = useState("");
-  const [error, setError] = useState("");
-  const [errors, setErrors] = useState({});
-
-
-  // Nepal phone number pattern (starts with 98/97/96 and 10 digits total)
-  const nepaliPattern = /^(98|97|96)\d{8}$/;
-
-  const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
+  const[messages ,setMessages]=useState("");
+  const handleChange = (e) =>{
+    setcontactData({...contactData,[e.target.name]:e.target.value});
   };
-  const [isPopupOpen, setIsPopupOpen] = useState(false);
-  const handleChangenumber = (e) => {
-    const input = e.target.value.replace(/\D/g, ""); // Only digits
-    if (input.length <= 10) {
-      setNumber(input);
-      setError("");
-    }
-  };
-
-  const validateForm = () => {
-    let tempErrors = {};
-
-    if (!form.FirstName.trim()) {
-      tempErrors.FirstName = "First Name is required!";
-    }
-    if (!form.LastName.trim()) {
-      tempErrors.LastName = "Last Name is required!";
-    }
-    if (!number.trim()) {
-      setError("Phone number is required!");
-    } else if (!nepaliPattern.test(number)) {
-      setError("Invalid number (must be 10 digits and start with 98, 97, or 96)");
-    }
-    if (!form.email.trim()) {
-      tempErrors.email = "Email is required!";
-    } else if (!/\S+@\S+\.\S+/.test(form.email)) {
-      tempErrors.email = "Invalid email !";
-    }
-
-    setErrors(tempErrors);
-
-    return Object.keys(tempErrors).length === 0 && nepaliPattern.test(number);
-  };
+   const handleSubmit = async e =>{
+        e.preventDefault();
+        try{
+            const res = await fetch("http://localhost/React/contact.php",{
+                method :"POST",
+                headers:{"Content-Type":"application/json"},
+                body:JSON.stringify(contactData),
+            });
+            const data = await res.json();
+            setMessages(data.message);
+        }catch (err){
+            setMessages("Error Connecting TO Server");
+        }
+    };
 
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (validateForm()) {
-      setForm({ FirstName: "", LastName: "", email: "", message: "" });
-      setNumber("");
-      setErrors({});
-      setIsPopupOpen(true);
-      setError("");
-    }
-  };
 
   return (
     <>
@@ -97,61 +63,42 @@ const ContactUs = () => {
           {/* Right side (Form) */}
           <div className="contact-form-right">
             <div className="banner-title"><h1>Contact Us</h1></div>
-            <form onSubmit={handleSubmit}>
+            <form action="" onSubmit={handleSubmit}>
 
               {/* First + Last Name */}
               <div className="conatctandemail">
-                <input type="text" name="FirstName" placeholder="First Name" value={form.FirstName} onChange={handleChange} />
-                <input type="text" name="LastName" placeholder="Last Name" value={form.LastName} onChange={handleChange} />
+                <input type="text" name="FirstName" placeholder="First Name" onChange={handleChange} />
+                <input type="text" name="LastName" placeholder="Last Name" onChange={handleChange} />
               </div>
-              <div className="Errors">
-                {errors.FirstName && <p className="error">{errors.FirstName}</p>}
-                {errors.LastName && <p className="error">{errors.LastName}</p>}
-              </div>
+             
 
               {/* Phone + Email */}
               <div className="conatctandemail">
                 <input
                   type="text"
                   placeholder="Enter Number"
-                  value={number}
-                  onChange={handleChangenumber}
-                  inputMode="numeric"
-                  pattern="\d*"
-                  maxLength="10"
-                  style={{ appearance: "none" }}
+                  onChange={handleChange} 
+                  name="number"
                 />
                 <input
                   type="email"
                   name="email"
                   placeholder="Enter your Email"
-                  value={form.email}
-                  onChange={handleChange}
+                  onChange={handleChange} 
+                  
                 />
-              </div>
-              <div className="Errors">
-                {error && <p className="error">{error}</p>}
-                {errors.email && <p className="error">{errors.email}</p>}
               </div>
 
               {/* Message */}
               <textarea
                 name="message"
                 placeholder="Feedback"
-                value={form.message}
-                onChange={handleChange}
-              ></textarea>
+                onChange={handleChange} 
+              />
 
               <button type="submit">Submit</button>
             </form>
-            {isPopupOpen && (
-        <div className="popup">
-          <div className="popup-content">
-            <h2>Form Submitted Successfull</h2>
-            <button onClick={() => setIsPopupOpen(false)}>X</button>
-          </div>
-        </div>
-        )}
+            <p>{messages}</p>
           </div>
         </div>
       </section>

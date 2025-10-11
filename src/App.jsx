@@ -15,6 +15,7 @@ import DashBoard from './admin/Dashboard/DashBoard';
 import Productitem from './admin/Product/Product';
 import OrderItem from './admin/orderitem/orderitem';
 import SignUp from './page/SignUp';
+import Update from './page/Update';
 function App() {
   return (
       <>
@@ -31,6 +32,7 @@ function App() {
         <Route path="/DashBoard" element={<DashBoard/>}/>
         <Route path="/ProductItem" element={<Productitem/>}/>
         <Route path="/OrderItem" element={<OrderItem/>}/>
+        <Route path="/LoginPage/Update" element={<Update/>}/>
       </Routes>
       {/* <Footer /> */}
     </Router>

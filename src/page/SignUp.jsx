@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React,{useState,useEffect} from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 const SignUp =()=>{
@@ -9,6 +9,7 @@ const SignUp =()=>{
         email:"",
         password:"",
     });
+    const [users,setusers]=useState([]);
     const [message , setMessage]=useState("");
     const handleChange = e =>{
         setFormData ({...formData,[e.target.name]:e.target.value});
@@ -27,10 +28,16 @@ const SignUp =()=>{
             setMessage("Error Connecting TO Server");
         }
     };
+    useEffect(()=>{
+        fetch("http://localhost/React/getuser.php").then(Response=>Response.json()).then(data=>setusers(data)).catch(error=>console.log("error fetching data.".error));
+    },
+    []);
  return(
     <>
     <Header/>
-    <div>
+    <section id="signup">
+    <div className="main secondary container">
+        <h2>SignUp</h2>
         <form action="" onSubmit={handleSubmit}>
             <input type="text" name="user" onChange={handleChange} placeholder="User"/> <br />
             <input type="text" name="name" onChange={handleChange} placeholder="Name"/><br />
@@ -41,6 +48,25 @@ const SignUp =()=>{
         </form>
         <p>{message}</p>
     </div>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>User</th>
+            <th>Name</th>
+            <th>Email</th>
+        </tr>
+        
+            <tbody>{users.map(users=>(
+                <tr>
+                <td>{users.id}</td>
+                <td>{users.user}</td>
+                <td>{users.name}</td>
+                <td>{users.email}</td>
+                </tr>
+            ))}</tbody>
+        
+    </table>
+    </section>
   <Footer/>
     </>
  );
